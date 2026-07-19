@@ -28,7 +28,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ui.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {/* No JS → no IntersectionObserver, so reveals must not stay lost. */}
+        <noscript>
+          <style>{`.reveal{opacity:1;transform:none}`}</style>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }
