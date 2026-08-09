@@ -48,15 +48,10 @@ export default function Hero() {
             </p>
 
             <div className="hero__cta">
-              <a
-                className="btn btn--solid"
-                href="https://github.com/SukrutN/switchyard"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="btn btn--solid" href="#quickstart">
                 <span className="btn__text">
-                  <span>Get the broker</span>
-                  <span aria-hidden="true">Get the broker</span>
+                  <span>Run the yard</span>
+                  <span aria-hidden="true">Run the yard</span>
                 </span>
                 <span className="btn__arrow" aria-hidden="true">
                   <svg className="arrow" viewBox="0 0 12 12">
