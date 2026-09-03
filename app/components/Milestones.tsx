@@ -9,10 +9,10 @@ const MILESTONES = [
   { v: "0.1.0", label: "M1 · pub/sub core", note: "wire v1, the subject charter, the yard, spur — and the suite over real sockets." },
   { v: "0.2.0", label: "M2 · durable streams", note: "lanes, the append-only journal, durable consumers, the sweeper." },
   { v: "0.3.0", label: "M2 · kv", note: "a bucket is a lane; every write a receipt, every read the same on-disk story." },
-  { v: "0.4.0", label: "M3 · the yardmaster console", note: "the yard's state on the wire — read-only: a lens, not a lever." },
+  { v: "0.4.0", label: "M3 · the yardmaster console", note: "the yard's state on the wire, read-only: a lens, not a lever." },
   { v: "0.5.0", label: "M4 · the gate and the wrap", note: "a token before HELLO; TLS wrapping every byte of every session." },
-  { v: "0.6.0", label: "M4 · yardstick", note: "the honest bench rod — and the drain arithmetic it exposed, fixed." },
-  { v: "1.0.0", label: "the promise release", note: "the surface frozen: families append, numbers never move. The yard ships." },
+  { v: "0.6.0", label: "M4 · yardstick", note: "the honest bench rod, plus the drain arithmetic it exposed and the fix it forced." },
+  { v: "1.0.0", label: "the promise release", note: "the surface is frozen: families append, op numbers never move. The yard ships." },
 ];
 
 export default function Milestones() {
@@ -22,7 +22,7 @@ export default function Milestones() {
         <p className="eyebrow">
           <span className="milestones__signal">06</span> · the birthlog
         </p>
-        <h2 className="display milestones__title">Seven releases, July to October.</h2>
+        <h2 className="display milestones__title">Every release, in order.</h2>
 
         <div className="milestones__list">
           {MILESTONES.map((m, i) => (
@@ -40,13 +40,13 @@ export default function Milestones() {
         </div>
 
         <p className="milestones__foot mono">
-          seven releases, July 18 · October 21 — the summer built the yard,
-          changelog <a
+          seven releases, July 18 · October 21 · the full changelog is{" "}
+          <a
             className="milestones__link"
             href="https://github.com/SukrutN/switchyard/blob/main/CHANGELOG.md"
             target="_blank"
             rel="noreferrer"
-          >CHANGELOG.md</a> as witness
+          >CHANGELOG.md</a>
         </p>
       </div>
     </section>

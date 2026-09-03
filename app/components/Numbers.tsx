@@ -17,11 +17,11 @@ export default function Numbers() {
             <span className="numbers__eyebrow-signal">02</span> · the yard by
             the numbers
           </p>
-          <h2 className="display numbers__title">Measured, not marketed.</h2>
+          <h2 className="display numbers__title">What the rod prints.</h2>
           <p className="numbers__lede">
-            The rod prints what an operator gets — three consecutive runs,
-            spread shown so the table cannot lie. Below, the strong end of
-            each gauge.
+            yardstick throws up a temporary yard and runs each scene three
+            times, printing the spread so the table can&apos;t lie. Below, the
+            strong end of each range.
           </p>
         </div>
 
@@ -85,8 +85,8 @@ export default function Numbers() {
           </p>
           <p className="numbers__reading">
             Read it the yardmaster&apos;s way: the top row is the wire&apos;s
-            clock; the bottom gauges are a lucky disk&apos;s clock —
-            per-record fsync on a system SSD. On slower disks the journal
+            clock, the bottom two gauges are a lucky disk&apos;s clock
+            (per-record fsync on a system SSD). On slower disks the journal
             numbers fall with the hardware, by design:{" "}
             <em>the receipt is a promise, not a hope.</em>
           </p>

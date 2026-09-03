@@ -18,9 +18,9 @@ export default function Quickstart() {
             One minute to your first delivery.
           </h2>
           <p className="quickstart__lede">
-            Requires <span className="mono">go 1.25</span>. The first yard is
-            in-memory — pure gossip, nothing on disk. Step 4 gives the
-            journal a home.
+            Needs <span className="mono">go 1.25</span>. The first yard runs
+            in memory only; step 3 gives the journal a home, step 4 wraps it
+            in tokens and TLS.
           </p>
         </div>
 
@@ -30,7 +30,8 @@ export default function Quickstart() {
               <div className="qstep__rail">
                 <span className="qstep__num mono">01</span>
                 <p className="qstep__why">
-                  install the yard — one command, one binary, 127.0.0.1:4780.
+                  one command and the yard is up on 127.0.0.1:4780, in
+                  memory, with nothing on disk yet.
                 </p>
               </div>
               <CopyBlock
@@ -44,7 +45,7 @@ export default function Quickstart() {
               <div className="qstep__rail">
                 <span className="qstep__num mono">02</span>
                 <p className="qstep__why">
-                  gossip — a watcher in one shell, a publish in another.
+                  a watcher in one shell, a publish in another.
                 </p>
               </div>
               <CopyBlock
@@ -58,9 +59,9 @@ export default function Quickstart() {
               <div className="qstep__rail">
                 <span className="qstep__num mono">03</span>
                 <p className="qstep__why">
-                  give the journal a home — lanes light up; restart on the
-                  same dir and durable consumers replay exactly the rows the
-                  last session never acknowledged.
+                  give the journal a home and the lane verbs light up.
+                  Restart on the same dir and durable consumers replay
+                  exactly the rows never acknowledged.
                 </p>
               </div>
               <CopyBlock
@@ -74,9 +75,9 @@ export default function Quickstart() {
               <div className="qstep__rail">
                 <span className="qstep__num mono">04</span>
                 <p className="qstep__why">
-                  company mode — a token before HELLO, TLS wrapping every
-                  byte. A password on an unwrapped wire is not an operating
-                  mode: compose them.
+                  a token required before HELLO, TLS on every byte. The
+                  README&apos;s rule: a password on an unwrapped wire is not
+                  an operating mode, so use both.
                 </p>
               </div>
               <CopyBlock
