@@ -23,17 +23,18 @@ export default function TourSection() {
             <span className="mono toursec__chip">
               ping · pub · sub · stream · kv · yard
             </span>{" "}
-            — one verb vocabulary, one dial set (
+            built on{" "}
+            <span className="mono toursec__chip">internal/client</span>: the
+            same library the test suite drives. Every verb shares one dial
+            set (
             <span className="mono toursec__chip">-addr -auth -tls -insecure</span>
-            ) on every verb, speaking the same{" "}
-            <span className="mono toursec__chip">internal/client</span>{" "}
-            library the test suite drives.
+            ).
           </p>
           <p className="toursec__body toursec__body--mut">
-            The console replays the README&apos;s quickstart on a loop:
-            gossip round trips, a fan-out delivery, a journaled row, a KV
-            receipt, the yardmaster&apos;s read-only lens. Every answer on
-            screen is a response the wire actually sends.
+            The panel right replays the README&apos;s quickstart on a loop:
+            a ping, a pub/sub round trip, a journaled push, a KV set, then
+            the yardmaster&apos;s read. What prints are the answers the wire
+            actually sends.
           </p>
         </div>
 

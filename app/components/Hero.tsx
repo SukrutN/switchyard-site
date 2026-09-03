@@ -41,10 +41,10 @@ export default function Hero() {
             </h1>
 
             <p className="lede hero__lede">
-              A Go message broker you can run from one binary and understand
-              from one file. One wire, one journal: pub/sub, durable streams,
-              key–value state, a console lens. What lands on the wire is
-              exactly what every subscriber gets — receipts, not hopes.
+              A Go message broker you can run from one binary and read from
+              one file. Pub/sub, durable streams, key-value state, and a
+              console view all ride the same 8-byte wire. What lands on it is
+              exactly what every subscriber gets, in accepted order.
             </p>
 
             <div className="hero__cta">
@@ -154,8 +154,8 @@ const tickRow = [
   { op: "PING", text: "pong 0.510 ms · 14.3–17.4k probes/s", signal: true },
   { op: "KV_SET", text: "orders/box-42 · receipt", signal: false },
   { op: "STREAM_PUSH", text: "orders · row #4 · 20 B on disk", signal: false },
-  { op: "AUTH", text: "gate before HELLO · TLS wraps", signal: false },
-  { op: "SLOW_CONSUMER", text: "one fatal frame, told why", signal: false },
+  { op: "AUTH", text: "token before HELLO · TLS wraps", signal: false },
+  { op: "SLOW_CONSUMER", text: "one fatal frame, and it says why", signal: false },
 ];
 
 /* registration cross: a corner + two coordinates, like a drawing sheet */

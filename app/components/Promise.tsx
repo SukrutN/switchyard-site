@@ -8,7 +8,7 @@ import "./promise.css";
 const FAMILIES: Array<{ name: string; sections: string; ops: string }> = [
   { name: "pub/sub core", sections: "§2.1–§2.7", ops: "0x01–0x0A" },
   { name: "durable streams (\"lanes\")", sections: "§2.8–§2.17", ops: "0x0B–0x14" },
-  { name: "key–value state", sections: "§2.18–§2.23", ops: "0x15–0x1A" },
+  { name: "key-value state", sections: "§2.18–§2.23", ops: "0x15–0x1A" },
   { name: "the yardmaster lens (read-only)", sections: "§2.24–§2.27", ops: "0x1B–0x1E" },
   { name: "the gate and the wrap", sections: "§2.28–§2.29", ops: "0x1F–0x20" },
 ];
@@ -23,16 +23,15 @@ export default function PromiseSection() {
           </p>
           <h2 className="display promise__title">Numbers never move.</h2>
           <p className="promise__body">
-            Protocol v1 is frozen: op numbers never move, families only
-            append, error codes stay put. A client written against §2 today
-            keeps working against later yards — the yard keeps its books the
-            way a rail yard keeps its books.
+            Protocol v1 is frozen. Op numbers never move, families only
+            append, error codes keep their names. A client written against
+            §2 today will still wire up against a later 1.x yard, unchanged.
           </p>
           <p className="promise__body promise__body--mut">
-            The spec is the only definition the wire has; its single source
-            in code is{" "}
-            <span className="mono promise__chip">internal/wire</span>. Read
-            the whole contract — 29 numbered sections, no ambiguity:
+            The spec is the wire&apos;s only definition, and{" "}
+            <span className="mono promise__chip">internal/wire</span> is the
+            only code that defines it. The whole contract is 29 numbered
+            sections:
           </p>
           <div className="promise__cta">
             <a
@@ -70,8 +69,8 @@ export default function PromiseSection() {
             </Reveal>
           ))}
           <p className="promise__note">
-            Appended in numbered order since §2.7 — and {""}
-            <em>that is the whole letter of the law</em>.
+            Appends land after the last family; earlier numbers stay
+            exactly where they are.
           </p>
         </div>
       </div>
