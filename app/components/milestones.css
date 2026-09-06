@@ -97,7 +97,7 @@
 
 @media (max-width: 520px) {
   .mrow {
-    grid-template-columns: 44px 12px 1fr;
+    grid-template-columns: 44px 12px minmax(0, 1fr);
   }
 
   .mrow__note {
