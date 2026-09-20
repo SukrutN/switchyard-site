@@ -14,10 +14,14 @@ export default function TourSection() {
           <p className="eyebrow">
             <span className="toursec__signal">03</span> · operate it
           </p>
-          <h2 className="display toursec__title">
-            Drive the yard from a terminal.
+          <h2 className="display toursec__title" data-anim="wipe">
+            <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
+              <span className="wl__t">
+                Drive the yard from a terminal.
+              </span>
+            </span>
           </h2>
-          <p className="toursec__body">
+          <p className="toursec__body" data-fill>
             <span className="mono toursec__chip">spur</span> is the reference
             CLI:{" "}
             <span className="mono toursec__chip">

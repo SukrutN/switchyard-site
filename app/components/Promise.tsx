@@ -21,13 +21,17 @@ export default function PromiseSection() {
           <p className="eyebrow">
             <span className="promise__signal">05</span> · the promise
           </p>
-          <h2 className="display promise__title">Numbers never move.</h2>
+          <h2 className="display promise__title" data-anim="wipe">
+            <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
+              <span className="wl__t">Numbers never move.</span>
+            </span>
+          </h2>
           <p className="promise__body">
             Protocol v1 is frozen. Op numbers never move, families only
             append, error codes keep their names. A client written against
             §2 today will still wire up against a later 1.x yard, unchanged.
           </p>
-          <p className="promise__body promise__body--mut">
+          <p className="promise__body promise__body--mut" data-fill>
             The spec is the wire&apos;s only definition, and{" "}
             <span className="mono promise__chip">internal/wire</span> is the
             only code that defines it. The whole contract is 29 numbered

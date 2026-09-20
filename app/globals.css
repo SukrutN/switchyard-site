@@ -26,6 +26,8 @@
   --console-line: rgba(236, 235, 231, 0.14);
 
   --ease: cubic-bezier(0.2, 0.65, 0.25, 1);
+  /* the borrowed answer-ease: slow in, hard out (enerblock's reveal) */
+  --ease-rx: cubic-bezier(0.53, 0, 0, 1);
 
   /* the two voices: tight grotesk for the claims, mono for the operator */
   --font-ui: var(--font-inter-tight), system-ui, sans-serif;
