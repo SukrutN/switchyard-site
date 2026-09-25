@@ -267,7 +267,10 @@ export default function Motion() {
         const step = (t: number) => {
           if (killed) return;
           const p = Math.min(1, (t - t0) / d);
-          window.scrollTo(0, y0 + (y1 - y0) * easeInOutExpo(p));
+          /* instant, not the document's smooth behavior: the tween
+             IS the ease; per-tick smooth scrolls would reprogram
+             Chrome's async smooth anim every frame and damp to mud */
+          window.scrollTo({ top: y0 + (y1 - y0) * easeInOutExpo(p), behavior: "instant" });
           if (p < 1) requestAnimationFrame(step);
         };
         requestAnimationFrame(step);
