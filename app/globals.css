@@ -18,6 +18,9 @@
 
   /* the signal: one hot color, used sparingly, never for body text */
   --signal: #ff4708;
+  /* signal for small text on paper: the hot orange clears only 2.97:1
+     at body sizes, so small labels read the set-down ink instead */
+  --signal-ink: #b23a03;
 
   /* the console band: dark sections speak like the yard log */
   --console-bg: #101013;
@@ -133,7 +136,7 @@ button {
 }
 
 .eyebrow--signal {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 /* big display type, tight */

@@ -10,7 +10,7 @@
 }
 
 .toursec__signal {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 .toursec__title {
