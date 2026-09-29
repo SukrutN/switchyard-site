@@ -8,7 +8,7 @@
 }
 
 .quickstart__signal {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 .quickstart__title {
