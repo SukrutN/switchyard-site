@@ -106,7 +106,7 @@
 }
 
 .hero__tag__v--signal {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 .hero__grid {
@@ -305,7 +305,7 @@
 }
 
 .ticket__ok {
-  color: var(--signal);
+  color: var(--signal-ink);
   font-weight: 600;
 }
 
@@ -320,7 +320,7 @@
 
 .ticket__cursor {
   display: inline-block;
-  color: var(--signal);
+  color: var(--signal-ink);
   animation: blink 1.05s steps(2) infinite;
 }
 
@@ -343,7 +343,7 @@
 }
 
 .ticket__foot--signal {
-  color: var(--signal);
+  color: var(--signal-ink);
   font-weight: 700;
 }
 
@@ -461,7 +461,7 @@
 
 .tick__item--signal,
 .tick__item--signal .tick__op {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 .tick__dash {
