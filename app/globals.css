@@ -11,7 +11,8 @@
   --paper-raise: #e9e6e0;
   --ink: #16161a;
   --ink-70: color-mix(in srgb, var(--ink) 70%, transparent);
-  --ink-50: color-mix(in srgb, var(--ink) 50%, transparent);
+  /* small labels and quiet prose; mixed at 64% so it clears 4.5:1 on paper */
+  --ink-50: color-mix(in srgb, var(--ink) 64%, transparent);
   --ink-30: color-mix(in srgb, var(--ink) 30%, transparent);
   --line: color-mix(in srgb, var(--ink) 15%, transparent);
 
@@ -21,7 +22,7 @@
   /* the console band: dark sections speak like the yard log */
   --console-bg: #101013;
   --console-fg: #ecebe7;
-  --console-mut: rgba(236, 235, 231, 0.55);
+  --console-mut: rgba(236, 235, 231, 0.68);
   --console-line: rgba(236, 235, 231, 0.14);
 
   --ease: cubic-bezier(0.2, 0.65, 0.25, 1);

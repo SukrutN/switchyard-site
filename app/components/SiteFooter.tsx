@@ -3,7 +3,7 @@ import "./footer.css";
 /** The house sign. Three hairline columns and one honesty line. */
 export default function SiteFooter() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="wrp">
         <div className="footer__grid">
           <div className="footer__brand">
@@ -12,8 +12,8 @@ export default function SiteFooter() {
               <span className="footer__ver mono">/1.0.0</span>
             </div>
             <p className="footer__pitch">
-              A Go message broker you can run from one binary and understand
-              from one file. Receipts, not hopes.
+              A Go message broker in one binary, explained by one file. The
+              README is short, and the tests keep it honest.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function SiteFooter() {
 
         <div className="footer__base">
           <span className="mono footer__base-line">
-            switchyard-site — next.js, exported static, served from the repo
+            switchyard-site · next.js, exported static, deployed from main
           </span>
           <span className="mono footer__base-line">
             <a

@@ -18,9 +18,10 @@ export default function Laws() {
             </p>
             <h2 className="display laws__title">Three laws, kept.</h2>
             <p className="laws__note">
-              Not slogans — every sentence below is enforced by the{" "}
+              Each law below is enforced by{" "}
               <span className="mono laws__mono-inline">internal/server</span>{" "}
-              test suite, frame by frame, against real sockets.
+              and by the test suites over real sockets. The words and the code
+              agree.
             </p>
             <div className="xhair laws__xhair" aria-hidden="true">
               <span className="xhair__x">LAW.SHEET</span>
@@ -41,7 +42,7 @@ export default function Laws() {
                 <h3 className="law__name display">The yard never lies.</h3>
                 <p className="law__body">
                   What lands on the wire is exactly what every subscriber
-                  gets — in accepted order, with nothing invented between
+                  gets, in accepted order, with nothing invented between
                   sender and receiver. That sentence is a test suite, not a
                   slogan.
                 </p>
@@ -58,8 +59,8 @@ export default function Laws() {
                 <p className="law__eyebrow">LAW 02</p>
                 <h3 className="law__name display">Bounded by default.</h3>
                 <p className="law__body">
-                  1&nbsp;MiB frames, 4096-deep delivery queues — the burst
-                  dam — 30&nbsp;s+10&nbsp;s heartbeat windows. Configure up;
+                  1&nbsp;MiB frames, 4096-deep delivery queues (the burst
+                  dam), 30&nbsp;s+10&nbsp;s heartbeat windows. Configure up;
                   the protocol ceiling is 4&nbsp;MiB.
                 </p>
               </div>
@@ -76,11 +77,11 @@ export default function Laws() {
                 <h3 className="law__name display">Slow-die bias.</h3>
                 <p className="law__body">
                   A session that cannot keep up gets one fatal{" "}
-                  <span className="law__code">SLOW_CONSUMER</span> rather
-                  than letting the yard grow memory without bound. Nonsense
-                  is rejected, not guessed around — oversize bodies are
-                  skipped and answered; broken framing ends a connection and
-                  spells out why.
+                  <span className="law__code">SLOW_CONSUMER</span> instead of
+                  letting the yard grow memory without bound. The same bias
+                  runs through the rest of the frame rules: oversized bodies
+                  are skipped and answered, and framing that breaks ends the
+                  connection with the reason spelled out.
                 </p>
               </div>
             </article>
