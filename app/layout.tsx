@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ),
   title: "switchyard — a Go message broker that never lies",
   description:
-    "One wire, one journal: fire-and-forget pub/sub, durable streams, key-value state, a console lens. Receipts, not hopes. Protocol v1 frozen.",
+    "A Go message broker: pub/sub, durable streams, key-value state, a read-only console. One binary, one protocol file, receipts on durable writes. v1.0.0.",
   keywords: [
     "go",
     "message broker",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "switchyard — a Go message broker that never lies",
     description:
-      "One wire, one journal. Receipts, not hopes — protocol v1 frozen, families append, numbers never move.",
+      "Protocol v1 is frozen: op numbers never move, families only append. Try it with go run ./cmd/switchyard.",
     url: SITE_URL,
     siteName: "switchyard",
     locale: "en_US",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "switchyard — a Go message broker that never lies",
     description:
-      "One wire, one journal: pub/sub, durable streams, key-value state, a console lens. Receipts, not hopes.",
+      "A Go message broker: pub/sub, durable streams, key-value state, a read-only console. One binary, one protocol file.",
     images: [SITE_URL + "opengraph-image"],
   },
 };
