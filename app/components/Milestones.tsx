@@ -20,7 +20,7 @@ export default function Milestones() {
     <section className="section section--pad milestones" id="milestones">
       <div className="wrp">
         <p className="eyebrow">
-          <span className="milestones__signal">06</span> · the birthlog
+          <span className="milestones__signal">07</span> · the birthlog
         </p>
         <h2 className="display milestones__title" data-anim="wipe">
           <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
