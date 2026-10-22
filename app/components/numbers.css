@@ -164,7 +164,7 @@
 
 @media (max-width: 520px) {
   .numbers__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .gauge:nth-child(even) {
