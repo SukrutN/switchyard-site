@@ -133,7 +133,7 @@
 
 @media (max-width: 940px) {
   .laws__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .laws__rail-stick {
@@ -147,7 +147,7 @@
 
 @media (max-width: 560px) {
   .law {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .law__num {

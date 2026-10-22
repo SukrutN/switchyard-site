@@ -13,3 +13,4 @@ Thumbs.db
 
 # environment
 .env*.local
+serve-root/
