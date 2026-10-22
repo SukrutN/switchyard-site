@@ -14,7 +14,7 @@
 }
 
 .promise__signal {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 .promise__title {

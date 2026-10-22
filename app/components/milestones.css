@@ -8,7 +8,7 @@
 }
 
 .milestones__signal {
-  color: var(--signal);
+  color: var(--signal-ink);
 }
 
 .milestones__title {
