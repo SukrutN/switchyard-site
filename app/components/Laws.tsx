@@ -16,7 +16,11 @@ export default function Laws() {
             <p className="eyebrow">
               <span className="eyebrow--signal">01</span> · the laws
             </p>
-            <h2 className="display laws__title">Three laws, kept.</h2>
+            <h2 className="display laws__title" data-anim="wipe">
+              <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
+                <span className="wl__t">Three laws, kept.</span>
+              </span>
+            </h2>
             <p className="laws__note">
               Each law below is enforced by{" "}
               <span className="mono laws__mono-inline">internal/server</span>{" "}

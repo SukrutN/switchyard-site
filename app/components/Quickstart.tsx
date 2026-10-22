@@ -14,8 +14,12 @@ export default function Quickstart() {
           <p className="eyebrow">
             <span className="quickstart__signal">04</span> · quickstart
           </p>
-          <h2 className="display quickstart__title">
-            One minute to your first delivery.
+          <h2 className="display quickstart__title" data-anim="wipe">
+            <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
+              <span className="wl__t">
+                One minute to your first delivery.
+              </span>
+            </span>
           </h2>
           <p className="quickstart__lede">
             Needs <span className="mono">go 1.25</span>. The first yard runs

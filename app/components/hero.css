@@ -141,7 +141,7 @@
 .hero__line > span {
   display: inline-block;
   transform: translateY(112%);
-  animation: hero-rise 0.9s var(--ease) forwards;
+  animation: hero-rise 0.95s var(--ease-rx) forwards;
   animation-delay: var(--d, 0ms);
 }
 

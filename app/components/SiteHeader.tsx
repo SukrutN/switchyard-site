@@ -8,7 +8,7 @@ export default function SiteHeader() {
           <span className="site-header__ver">/1.0.0</span>
         </a>
         <a
-          className="site-header__link"
+          className="site-header__link wl-link"
           href="https://github.com/SukrutN/switchyard"
           target="_blank"
           rel="noreferrer"

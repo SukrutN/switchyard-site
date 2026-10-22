@@ -22,7 +22,11 @@ export default function Milestones() {
         <p className="eyebrow">
           <span className="milestones__signal">06</span> · the birthlog
         </p>
-        <h2 className="display milestones__title">Every release, in order.</h2>
+        <h2 className="display milestones__title" data-anim="wipe">
+          <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
+            <span className="wl__t">Every release, in order.</span>
+          </span>
+        </h2>
 
         <div className="milestones__list">
           {MILESTONES.map((m, i) => (
@@ -42,7 +46,7 @@ export default function Milestones() {
         <p className="milestones__foot mono">
           all seven dated 2026-10-21 · the full changelog is{" "}
           <a
-            className="milestones__link"
+            className="milestones__link wl-link"
             href="https://github.com/SukrutN/switchyard/blob/main/CHANGELOG.md"
             target="_blank"
             rel="noreferrer"
