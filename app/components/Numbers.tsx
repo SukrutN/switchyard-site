@@ -17,8 +17,12 @@ export default function Numbers() {
             <span className="numbers__eyebrow-signal">02</span> · the yard by
             the numbers
           </p>
-          <h2 className="display numbers__title">What the rod prints.</h2>
-          <p className="numbers__lede">
+          <h2 className="display numbers__title" data-anim="wipe">
+            <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
+              <span className="wl__t">What the rod prints.</span>
+            </span>
+          </h2>
+          <p className="numbers__lede" data-fill>
             yardstick throws up a temporary yard and runs each scene three
             times, printing the spread so the table can&apos;t lie. Below, the
             strong end of each range.
@@ -83,7 +87,7 @@ export default function Numbers() {
               powershell -File scripts/bench.ps1
             </span>
           </p>
-          <p className="numbers__reading">
+          <p className="numbers__reading" data-fill>
             Read it the yardmaster&apos;s way: the top row is the wire&apos;s
             clock, the bottom two gauges are a lucky disk&apos;s clock
             (per-record fsync on a system SSD). On slower disks the journal

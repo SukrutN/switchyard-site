@@ -20,6 +20,7 @@ export default function SiteFooter() {
           <nav className="footer__col" aria-label="the broker">
             <p className="footer__head">THE BROKER</p>
             <a
+              className="wl-link"
               href="https://github.com/SukrutN/switchyard"
               target="_blank"
               rel="noreferrer"
@@ -27,6 +28,7 @@ export default function SiteFooter() {
               the repository
             </a>
             <a
+              className="wl-link"
               href="https://github.com/SukrutN/switchyard#switchyard"
               target="_blank"
               rel="noreferrer"
@@ -34,6 +36,7 @@ export default function SiteFooter() {
               the README
             </a>
             <a
+              className="wl-link"
               href="https://github.com/SukrutN/switchyard/blob/main/scripts/bench.ps1"
               target="_blank"
               rel="noreferrer"
@@ -45,6 +48,7 @@ export default function SiteFooter() {
           <nav className="footer__col" aria-label="the documents">
             <p className="footer__head">THE DOCUMENTS</p>
             <a
+              className="wl-link"
               href="https://github.com/SukrutN/switchyard/blob/main/docs/PROTOCOL.md"
               target="_blank"
               rel="noreferrer"
@@ -52,6 +56,7 @@ export default function SiteFooter() {
               PROTOCOL.md — the wire
             </a>
             <a
+              className="wl-link"
               href="https://github.com/SukrutN/switchyard/blob/main/CHANGELOG.md"
               target="_blank"
               rel="noreferrer"
@@ -75,7 +80,7 @@ export default function SiteFooter() {
           </span>
           <span className="mono footer__base-line">
             <a
-              className="footer__top"
+              className="footer__top wl-link"
               href="#top"
             >
               back to the yard ⇧

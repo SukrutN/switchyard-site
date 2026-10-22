@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter_Tight, JetBrains_Mono } from "next/font/google";
+import Motion from "./components/Motion";
 import "./globals.css";
 
 // The voice: tight grotesk for the claims, mono for the operator.
@@ -73,10 +74,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${ui.variable} ${mono.variable}`}>
       <body>
-        {/* No JS → no IntersectionObserver, so reveals must not stay lost. */}
+        {/* No JS → no IntersectionObserver, so nothing may stay lost. */}
         <noscript>
-          <style>{`.reveal{opacity:1;transform:none}`}</style>
+          <style>{`
+            .reveal{opacity:1;transform:none}
+            [data-anim="wipe"] .wl__t{opacity:1;animation:none}
+            [data-anim="wipe"] .wl::after{display:none}
+            .gauge__value .countup,.gauge__value>*{opacity:1;transform:none}
+            .site-header::after{display:none}
+          `}</style>
         </noscript>
+        <Motion />
         {children}
       </body>
     </html>
