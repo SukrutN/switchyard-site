@@ -12,7 +12,7 @@ export default function Quickstart() {
       <div className="wrp">
         <div className="quickstart__head">
           <p className="eyebrow">
-            <span className="quickstart__signal">04</span> · quickstart
+            <span className="quickstart__signal">05</span> · quickstart
           </p>
           <h2 className="display quickstart__title" data-anim="wipe">
             <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
