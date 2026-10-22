@@ -19,7 +19,7 @@ export default function PromiseSection() {
       <div className="wrp promise__grid">
         <div className="promise__copy">
           <p className="eyebrow">
-            <span className="promise__signal">05</span> · the promise
+            <span className="promise__signal">06</span> · the promise
           </p>
           <h2 className="display promise__title" data-anim="wipe">
             <span className="wl" style={{ "--i": 0 } as React.CSSProperties}>
