@@ -26,6 +26,10 @@
 
   --ease: cubic-bezier(0.2, 0.65, 0.25, 1);
 
+  /* the two voices: tight grotesk for the claims, mono for the operator */
+  --font-ui: var(--font-inter-tight), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
   /* type scale (clamp) */
   --step--1: clamp(0.78rem, 0.74rem + 0.2vw, 0.9rem);
   --step-0: clamp(0.95rem, 0.9rem + 0.25vw, 1.0625rem);
