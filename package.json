@@ -2,10 +2,14 @@
   "name": "switchyard-site",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "description": "The showcase website for switchyard — the yard in the operator's own voice.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test": "node --test \"engine/boxcar-engine/tests/*.test.ts\"",
+    "bench": "node engine/boxcar-engine/bench/bench.ts",
+    "lock": "node engine/boxcar-engine/bench/run.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
