@@ -15,7 +15,7 @@ const SCRIPT: Line[] = [
   { kind: "cmd", text: "spur ping" },
   { kind: "ok", text: "pong in 0.510 ms from switchyard/1.0.0" },
   { kind: "cmd", text: "spur sub 'orders.*.paid' &" },
-  { kind: "out", text: "watching — deliveries land in accepted order" },
+  { kind: "out", text: "watching · deliveries land in accepted order" },
   { kind: "cmd", text: "spur pub 'orders.e9.paid' 'box 42 left the dock'" },
   { kind: "ok", text: "written to the wire · delivered to sid1 #1" },
   { kind: "cmd", text: "spur stream push orders orders.9001.paid 'left the dock'" },
@@ -94,7 +94,7 @@ export default function Tour() {
         <span key={c} className={`tour__corner tour__corner--${c + 1}`} />
       ))}
       <div className="tour__bar">
-        <span>spur — the reference client</span>
+        <span>spur · the reference client</span>
         <span className="tour__addr">127.0.0.1:4780</span>
       </div>
       <div className="tour__body mono" ref={bodyRef}>

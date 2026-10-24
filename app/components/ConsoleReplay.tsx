@@ -163,7 +163,7 @@ export default function ConsoleReplay() {
         ...s,
         consumers: [{ ...c, attached: true, pending: c.pending + owed }],
         log: [
-          `· inspector attaches — resumes from floor ${c.floor}; ${owed} row(s) owed`,
+          `· inspector attaches: resumes from floor ${c.floor}, ${owed} row${owed === 1 ? "" : "s"} owed`,
           ...s.log,
         ].slice(0, 5),
       };
@@ -180,7 +180,7 @@ export default function ConsoleReplay() {
         ...s,
         consumers: [{ ...inspector, floor: s.seq, pending: 0 }],
         log: [
-          `· inspector acks — the durable floor resumes from seq ${s.seq}`,
+          `· inspector acks: the durable floor resumes from seq ${s.seq}`,
           ...s.log,
         ].slice(0, 5),
       };
@@ -194,7 +194,7 @@ export default function ConsoleReplay() {
         ...s,
         consumers: [{ ...s.consumers[0], attached: false }],
         log: [
-          `· inspector detaches — the durable floor ${s.consumers[0].floor} stands`,
+          `· inspector detaches: the durable floor ${s.consumers[0].floor} stands`,
           ...s.log,
         ].slice(0, 5),
       };
@@ -213,7 +213,7 @@ export default function ConsoleReplay() {
         ? {
             ...s,
             dark: false,
-            log: ["· reconnected — the console keeps watching", ...s.log].slice(0, 5),
+            log: ["· reconnected: the console keeps watching", ...s.log].slice(0, 5),
           }
         : s
     );
@@ -458,10 +458,9 @@ export default function ConsoleReplay() {
       </div>
 
       <p className="replay__foot">
-        a replay of the recorded bring-up — the buttons drive the
-        console&apos;s model of this yard, not the yard itself. the live
-        thing runs where the binary runs:{" "}
-        <span className="mono">bin\yardmaster.exe</span>
+        this panel is a replay of the recorded bring-up. the buttons
+        drive a model; nothing here touches a real yard. run the binary
+        to see the console live: <span className="mono">bin\yardmaster.exe</span>
       </p>
     </div>
   );
