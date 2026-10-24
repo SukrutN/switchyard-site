@@ -19,4 +19,11 @@ Stack, chosen honestly:
 Flow of the house (same as the yard repo): branch per unit, PR per unit,
 true merge commits (never squash), conventional commits, CI gates merges.
 
+The family is growing: unit 04 — `boxcar-engine`, the cartonization
+and pack-out solver — lives at `engine/boxcar-engine` with its own
+README, fixtures, characterization tests and bench, and its own page
+at [`/boxcar`](https://sukrutn.github.io/switchyard-site/boxcar/).
+Same law as the rest of the site: every figure the page shows is
+printed by the engine, at build, never hand-typed.
+
 License: Apache-2.0, matching the broker.

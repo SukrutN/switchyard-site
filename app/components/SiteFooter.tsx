@@ -47,6 +47,9 @@ export default function SiteFooter() {
 
           <nav className="footer__col" aria-label="the documents">
             <p className="footer__head">THE DOCUMENTS</p>
+            <a className="wl-link" href="/boxcar/">
+              boxcar · unit-04 · the pack-out
+            </a>
             <a
               className="wl-link"
               href="https://github.com/SukrutN/switchyard/blob/main/docs/PROTOCOL.md"

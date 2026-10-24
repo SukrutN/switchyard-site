@@ -1,21 +1,44 @@
 // The banner: one brand line, one exit. No menus — the site is the page.
-export default function SiteHeader() {
+// On the home it now also carries the boxcar family's door; on the
+// boxcar page itself (cross) the brand names the family and offers
+// the way back to the yard.
+export default function SiteHeader({ cross = false }: { cross?: boolean }) {
   return (
     <header className="site-header">
       <div className="wrp site-header__inner">
-        <a className="site-header__brand" href="#top">
-          <span>switchyard</span>
-          <span className="site-header__ver">/1.0.0</span>
-        </a>
-        <a
-          className="site-header__link wl-link"
-          href="https://github.com/SukrutN/switchyard"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>GITHUB</span>
-          <Arrow />
-        </a>
+        {cross ? (
+          <a className="site-header__brand" href="/boxcar/">
+            <span>boxcar</span>
+            <span className="site-header__ver">/unit-04</span>
+          </a>
+        ) : (
+          <a className="site-header__brand" href="#top">
+            <span>switchyard</span>
+            <span className="site-header__ver">/1.0.0</span>
+          </a>
+        )}
+        <div className="site-header__links">
+          {cross ? (
+            <a className="site-header__link wl-link" href="/">
+              <span>THE YARD</span>
+              <Arrow />
+            </a>
+          ) : (
+            <a className="site-header__link wl-link" href="/boxcar/">
+              <span>BOXCAR</span>
+              <Arrow />
+            </a>
+          )}
+          <a
+            className="site-header__link wl-link"
+            href="https://github.com/SukrutN/switchyard"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>GITHUB</span>
+            <Arrow />
+          </a>
+        </div>
       </div>
     </header>
   );

@@ -1,4 +1,4 @@
-# gate — typecheck + build for every PR, and main verifies itself.
+# gate — the engine suite, typecheck, and build for every PR; main verifies too.
 name: gate
 
 on:
@@ -19,5 +19,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run test
+      - run: npm run lock
       - run: npm run typecheck
       - run: npm run build
