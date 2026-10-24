@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.GITHUB_ACTIONS === "true" ? SITE_ORIGIN : SITE_URL,
   ),
-  title: "switchyard — a Go message broker that never lies",
+  title: "switchyard: a Go message broker that never lies",
   description:
     "A Go message broker: pub/sub, durable streams, key-value state, a read-only console. One binary, one protocol file, receipts on durable writes. v1.0.0.",
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "receipts",
   ],
   openGraph: {
-    title: "switchyard — a Go message broker that never lies",
+    title: "switchyard: a Go message broker that never lies",
     description:
       "Protocol v1 is frozen: op numbers never move, families only append. Try it with go run ./cmd/switchyard.",
     url: SITE_URL,
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
         url: SITE_URL + "opengraph-image",
         width: 1200,
         height: 628,
-        alt: "switchyard — a Go message broker that never lies",
+        alt: "switchyard: a Go message broker that never lies",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "switchyard — a Go message broker that never lies",
+    title: "switchyard: a Go message broker that never lies",
     description:
       "A Go message broker: pub/sub, durable streams, key-value state, a read-only console. One binary, one protocol file.",
     images: [SITE_URL + "opengraph-image"],

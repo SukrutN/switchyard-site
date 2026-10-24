@@ -23,9 +23,9 @@ export default function Numbers() {
             </span>
           </h2>
           <p className="numbers__lede" data-fill>
-            yardstick throws up a temporary yard and runs each scene three
-            times, printing the spread so the table can&apos;t lie. Below, the
-            strong end of each range.
+            yardstick starts a temporary yard and runs each scene three
+            times, printing the spread so the table can&apos;t lie. The
+            gauges below show the strong end of each range.
           </p>
         </div>
 
@@ -89,10 +89,10 @@ export default function Numbers() {
           </p>
           <p className="numbers__reading" data-fill>
             Read it the yardmaster&apos;s way: the top row is the wire&apos;s
-            clock, the bottom two gauges are a lucky disk&apos;s clock
-            (per-record fsync on a system SSD). On slower disks the journal
-            numbers fall with the hardware, by design:{" "}
-            <em>the receipt is a promise, not a hope.</em>
+            clock. The bottom two gauges are bound by the disk, because
+            each journal row waits for fsync, on a system SSD here. On
+            slower disks the journal numbers fall with the hardware. A
+            receipt still means the row is on disk.
           </p>
         </div>
       </div>

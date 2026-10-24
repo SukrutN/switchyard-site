@@ -12,7 +12,7 @@ export default function SiteFooter() {
               <span className="footer__ver mono">/1.0.0</span>
             </div>
             <p className="footer__pitch">
-              A Go message broker in one binary, explained by one file. The
+              A Go message broker in one binary, documented in one file. The
               README is short, and the tests keep it honest.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noreferrer"
             >
-              PROTOCOL.md — the wire
+              PROTOCOL.md · the wire
             </a>
             <a
               className="wl-link"
@@ -61,7 +61,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noreferrer"
             >
-              CHANGELOG.md — the birthlog
+              CHANGELOG.md · the birthlog
             </a>
           </nav>
 
