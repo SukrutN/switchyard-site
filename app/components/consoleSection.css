@@ -315,3 +315,126 @@
     display: none;
   }
 }
+
+/* dark-refusal tint on the whole band */
+.consol__band--dark .consol__plate,
+.consol__band--dark .consol__gate {
+  opacity: 0.55;
+}
+
+.consol__band--dark .consol__dot {
+  background: var(--console-mut);
+}
+
+.consol__chip--dark b {
+  color: var(--signal);
+}
+
+.consol__note--dark {
+  color: var(--signal);
+}
+
+/* button bar — hairline chips in the band's own mono */
+.replay__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.replay__btn {
+  background: transparent;
+  color: var(--console-fg);
+  border: 1px solid var(--console-line);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+  padding: 0.34rem 0.65rem;
+  cursor: pointer;
+  transition: border-color 160ms var(--ease-rx), color 160ms var(--ease-rx),
+    background-color 160ms var(--ease-rx);
+}
+
+.replay__btn:hover:not(:disabled) {
+  border-color: var(--signal);
+  color: var(--signal);
+}
+
+.replay__btn:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
+.replay__btn:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.replay__btn--reset {
+  border-style: dashed;
+  color: var(--console-mut);
+}
+
+/* the receipt tape: wire words in spur's own formats, narrations with · */
+.replay__log {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--console-line);
+  padding-top: 0.55rem;
+  display: grid;
+  gap: 0.18rem;
+}
+
+.replay__log:empty {
+  display: none;
+}
+
+.replay__line {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: var(--console-mut);
+  overflow-wrap: anywhere;
+}
+
+.replay__line:first-child {
+  color: var(--console-fg);
+}
+
+.replay__foot {
+  margin-top: 1.4rem;
+  font-size: 0.74rem;
+  color: var(--console-mut);
+  max-width: 44em;
+}
+
+.replay__foot .mono {
+  color: var(--console-fg);
+}
+
+/* the clickable key rows (button reset inside li) */
+.replay__keyline {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.replay__keyline:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 1px;
+}
+
+.replay__keyline:disabled {
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .replay__btn {
+    transition: none;
+  }
+}
+
