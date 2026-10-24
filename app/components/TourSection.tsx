@@ -35,10 +35,10 @@ export default function TourSection() {
             ).
           </p>
           <p className="toursec__body toursec__body--mut">
-            The panel right replays the README&apos;s quickstart on a loop:
-            a ping, a pub/sub round trip, a journaled push, a KV set, then
-            the yardmaster&apos;s read. What prints are the answers the wire
-            actually sends.
+            The panel on the right replays the README&apos;s quickstart on a
+            loop: a ping, a pub/sub round trip, a journaled push, a KV set,
+            then the yardmaster&apos;s read. Every line is what the wire
+            actually prints.
           </p>
         </div>
 

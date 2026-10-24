@@ -31,19 +31,19 @@ export default function ConsoleSection() {
         </h2>
         <p className="consol__body" data-fill>
           <span className="mono">yardmaster</span> is the yard&apos;s
-          console: a companion binary that dials the running yard as an
-          ordinary client — same gate, same wrap, same dial vocabulary —
-          and mirrors what the console family (§2.24–§2.27) and the KV
-          reads (§2.19–§2.21) answer, in pages that ride inside the
-          binary itself.
+          console. It&apos;s a companion binary that runs beside a live
+          yard, connects as an ordinary client through the same gate and
+          framing <span className="mono">spur</span> uses, and shows what
+          the console family (§2.24–§2.27) and the KV reads (§2.19–§2.21)
+          answer. The pages it serves are part of the binary.
         </p>
         <p className="consol__body consol__body--mut" data-fill>
           It owns no levers: every panel is a read, quarantine is
           reported, not cleared, and the console cannot write a single
-          byte to the yard. The panel below is a replay — the buttons
-          publish, attach, ack, and cut the wire the way the recorded
-          bring-up went, and the console answers in its own words. The
-          live thing runs where the binary runs.
+          byte to the yard. The panel below is a replay of the recorded
+          bring-up, so you can publish, attach, ack, and cut the wire
+          without a real yard. When you want the real one, run the
+          binary.
         </p>
 
         <Reveal delay={80}>

@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
  * The social card, printed at build time: ink paper, the claim,
  * the wire's clock. Only the yard's own words and numbers.
  */
-export const alt = "switchyard — a Go message broker that never lies";
+export const alt = "switchyard: a Go message broker that never lies";
 export const size = { width: 1200, height: 628 };
 export const contentType = "image/png";
 // static export wants the route pinned, so the build prints it once.
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
             textTransform: "uppercase",
           }}
         >
-          <div style={{ display: "flex" }}>SWITCHYARD — A GO MESSAGE BROKER</div>
+          <div style={{ display: "flex" }}>SWITCHYARD · A GO MESSAGE BROKER</div>
           <div style={{ display: "flex", color: "#ff4708", fontWeight: 700 }}>
             V1.0.0
           </div>
