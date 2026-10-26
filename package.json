@@ -7,9 +7,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "test": "node --test \"engine/boxcar-engine/tests/*.test.ts\"",
+    "test": "node --test \"engine/boxcar-engine/tests/*.test.ts\" \"engine/despatch-engine/tests/*.test.ts\"",
     "bench": "node engine/boxcar-engine/bench/bench.ts",
+    "bench:boxcar": "node engine/boxcar-engine/bench/bench.ts",
+    "bench:despatch": "node engine/despatch-engine/bench/bench.ts",
     "lock": "node engine/boxcar-engine/bench/run.ts",
+    "lock:boxcar": "node engine/boxcar-engine/bench/run.ts",
+    "lock:despatch": "node engine/despatch-engine/bench/run.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
