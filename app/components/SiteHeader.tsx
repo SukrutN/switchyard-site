@@ -1,15 +1,20 @@
 // The banner: one brand line, one exit. No menus — the site is the page.
-// On the home it now also carries the boxcar family's door; on the
-// boxcar page itself (cross) the brand names the family and offers
-// the way back to the yard.
-export default function SiteHeader({ cross = false }: { cross?: boolean }) {
+// On a family page (cross) the brand names that family and offers the
+// way back to the yard; each family passes its own door.
+export default function SiteHeader({
+  cross = false,
+  family = { name: "boxcar", unit: "/unit-04", href: "/boxcar/" },
+}: {
+  cross?: boolean;
+  family?: { name: string; unit: string; href: string };
+}) {
   return (
     <header className="site-header">
       <div className="wrp site-header__inner">
         {cross ? (
-          <a className="site-header__brand" href="/boxcar/">
-            <span>boxcar</span>
-            <span className="site-header__ver">/unit-04</span>
+          <a className="site-header__brand" href={family.href}>
+            <span>{family.name}</span>
+            <span className="site-header__ver">{family.unit}</span>
           </a>
         ) : (
           <a className="site-header__brand" href="#top">
@@ -24,10 +29,16 @@ export default function SiteHeader({ cross = false }: { cross?: boolean }) {
               <Arrow />
             </a>
           ) : (
-            <a className="site-header__link wl-link" href="/boxcar/">
-              <span>BOXCAR</span>
-              <Arrow />
-            </a>
+            <>
+              <a className="site-header__link wl-link" href="/boxcar/">
+                <span>BOXCAR</span>
+                <Arrow />
+              </a>
+              <a className="site-header__link wl-link" href="/despatch/">
+                <span>DESPATCH</span>
+                <Arrow />
+              </a>
+            </>
           )}
           <a
             className="site-header__link wl-link"
