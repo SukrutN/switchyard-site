@@ -38,6 +38,10 @@ export default function SiteHeader({
                 <span>DESPATCH</span>
                 <Arrow />
               </a>
+              <a className="site-header__link wl-link" href="/foreman/">
+                <span>FOREMAN</span>
+                <Arrow />
+              </a>
             </>
           )}
           <a
